@@ -8,9 +8,46 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core"
 
 import Header from "./header"
 import "./layout.css"
+
+const globalStyles = css`
+  a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bolder;
+    position: relative;
+  }
+
+  a::before {
+    width: 0%;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    content: "";
+    height: 2px;
+    background-color: palevioletred;
+    transform: translateY(100%);
+    bottom: 0;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  body {
+    font-family: "Segoe UI", sans-serif;
+  }
+`
+
+const LayoutWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,20 +63,18 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <Global styles={globalStyles} />
+      <LayoutWrapper>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Built with{" "}
+          {/* <a href="https://www.gatsbyjs.org">Gatsby</a> and{" "} */}
+          <span role="img" aria-label="heart emoji">
+            ❤️
+          </span>{" "}
+          by <a href="https://github.com/pfdzm">pfdzm</a>
         </footer>
-      </div>
+      </LayoutWrapper>
     </>
   )
 }
