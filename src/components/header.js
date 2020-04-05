@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { css } from "@emotion/core"
+import Me from "./me"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,11 +15,15 @@ const Header = ({ siteTitle }) => (
         margin: 0 auto;
         max-width: 960px;
         padding: 1.45rem 1.0875rem;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
       `}
     >
       <h1
         css={css`
           margin: 0;
+          display: inline-block;
         `}
       >
         <Link
@@ -32,6 +37,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Me />
     </div>
   </header>
 )
