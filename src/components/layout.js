@@ -37,10 +37,6 @@ const globalStyles = css`
   a:hover::before {
     width: 100%;
   }
-
-  body {
-    font-family: "Segoe UI", sans-serif;
-  }
 `
 
 const LayoutWrapper = styled.div`
