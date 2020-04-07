@@ -1,16 +1,20 @@
 import React from "react"
+import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortfolioCard from "../components/portfolioCard"
 import AboutMe from "../components/aboutMe"
+import Skills from "../components/skills"
 import { projects } from "../data"
-import styled from "@emotion/styled"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <AboutMe />
+    <div className="skills">
+      <Skills />
+    </div>
     <div className="projects">
       <h2>My projects</h2>
       <Wrapper>
