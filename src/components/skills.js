@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 export default () => (
   <Wrapper>
-    <h2>My Skills</h2>
+    <h2>My skills</h2>
     <p>
       Here you will find a (probably incomplete) list of (mainly tech) skills
       that I am continually working on - you're never done learning!
