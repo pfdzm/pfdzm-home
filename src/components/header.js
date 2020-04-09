@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           css={css`
-            color: #BF3B3B;
+            color: #bf3b3b;
             text-decoration: none;
             font-weight: 900;
           `}

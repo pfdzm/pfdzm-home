@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     font-weight: bold;
     display: inline-block;
     padding: 0 0.3rem;
+    font-size: inherit;
   }
 `
 
@@ -50,9 +51,8 @@ export default () => (
           Comfortable with PowerQuery language ("M") and DAX.
         </li>
         <li>
-          Avid communicator and <code>life-long learner</code>, I enjoy learning
-          languages (I speak 3 native-like and am learning quite a few more!)
-          and working in multi-cultural, diverse teams.
+          Speak <code>German</code>, <code>English</code> and <code>Spanish</code> at a native level
+          and am a <code>curious</code> person that <code>loves to learn</code>.
         </li>
       </ul>
     </p>

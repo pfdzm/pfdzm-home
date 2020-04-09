@@ -16,7 +16,7 @@ import "./layout.css"
 
 const globalStyles = css`
   a {
-    color: #BF3B3B;
+    color: #bf3b3b;
     text-decoration: none;
     font-weight: bolder;
     position: relative;
@@ -24,23 +24,8 @@ const globalStyles = css`
   }
 
   a:hover {
-    color: #FF4F4F;
+    color: #ff4f4f;
   }
-  ${"" /* a::before {
-    width: 0%;
-    transition: all 0.2s ease-in-out;
-    position: absolute;
-    z-index: 1;
-    content: "";
-    height: 3px;
-    background-color: #BF3B3B;
-    transform: translateY(100%);
-    bottom: 0;
-  }
-
-  a:hover::before {
-    width: 100%;
-  } */}
 `
 
 const LayoutWrapper = styled.div`
