@@ -6,8 +6,12 @@ const Wrapper = styled.div`
     list-style: square;
   }
 
-  strong {
-    color: palevioletred;
+  code {
+    background-color: #bf3b3b;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 0.3rem;
   }
 `
 
@@ -20,36 +24,35 @@ export default () => (
       <br />
       <ul>
         <li>
-          Building modern, reactive frontends/UIs with <strong>React</strong>,
+          Building modern, reactive frontends/UIs with <code>React</code>,
           including packages and libraries such as Create React App, Redux,
           React Router, React Helmet
         </li>
         <li>
-          Building backends and RESTful APIs using <strong>NodeJS</strong>,
+          Building backends and RESTful APIs using <code>NodeJS</code>,
           including packages and libraries such as Express, Sequelize, Mongoose,
           Webpack
         </li>
         <li>
-          Modern <strong>HTML</strong> and <strong>CSS</strong>, including
-          libraries such as Bootstrap, Material UI, Ant Design, TailwindCSS,
+          Modern <code>HTML</code> and <code>CSS</code>, including libraries
+          such as Bootstrap, Material UI, Ant Design, TailwindCSS,
           styled-components, emotion
         </li>
         <li>
-          Learning the <strong>JAMstack</strong> architecture/philosophy using
-          React frameworks such as <strong>GatsbyJS</strong> and{" "}
-          <strong>NextJS</strong> and deploying to CDNs like{" "}
-          <strong>Netlify</strong> and <strong>Zeit Now</strong>.
+          Learning the <code>JAMstack</code> architecture/philosophy using React
+          frameworks such as <code>GatsbyJS</code> and <code>NextJS</code> and
+          deploying to CDNs like <code>Netlify</code> and <code>Zeit Now</code>.
         </li>
         <li>
-          Proficient in data analysis using <strong>Excel</strong>, including
+          Proficient in data analysis using <code>Excel</code>, including
           advanced features like Array formulas, Pivot tables, and the 'Power'
-          platform - PowerQuery, PowerPivot and <strong>PowerBI</strong>.
+          platform - PowerQuery, PowerPivot and <code>PowerBI</code>.
           Comfortable with PowerQuery language ("M") and DAX.
         </li>
         <li>
-          Avid communicator and <strong>life-long learner</strong>, I enjoy
-          learning languages (I speak 3 native-like and am learning quite a few
-          more!) and working in multi-cultural, diverse teams.
+          Avid communicator and <code>life-long learner</code>, I enjoy learning
+          languages (I speak 3 native-like and am learning quite a few more!)
+          and working in multi-cultural, diverse teams.
         </li>
       </ul>
     </p>

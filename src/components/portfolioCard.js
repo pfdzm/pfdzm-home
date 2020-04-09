@@ -24,12 +24,10 @@ export default ({ title, description, repo, deploy }) => (
     <div className="card-body">
       <h3 className="card-title">{title}</h3>
       <p className="card-text">{description}</p>
-      <p className="card-text">
+      <div className="card-links">
         <a href={deploy}>Live demo!</a>
-      </p>
-      <p className="card-text">
         <a href={repo}>Source code</a>
-      </p>
+      </div>
     </div>
   </div>
 )

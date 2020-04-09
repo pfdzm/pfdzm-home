@@ -16,27 +16,31 @@ import "./layout.css"
 
 const globalStyles = css`
   a {
-    color: palevioletred;
+    color: #BF3B3B;
     text-decoration: none;
     font-weight: bolder;
     position: relative;
+    transition: all 0.2s ease-in-out;
   }
 
-  a::before {
+  a:hover {
+    color: #FF4F4F;
+  }
+  ${"" /* a::before {
     width: 0%;
     transition: all 0.2s ease-in-out;
     position: absolute;
     z-index: 1;
     content: "";
-    height: 2px;
-    background-color: palevioletred;
+    height: 3px;
+    background-color: #BF3B3B;
     transform: translateY(100%);
     bottom: 0;
   }
 
   a:hover::before {
     width: 100%;
-  }
+  } */}
 `
 
 const LayoutWrapper = styled.div`

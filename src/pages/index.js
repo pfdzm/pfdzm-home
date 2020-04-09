@@ -35,20 +35,19 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   .card {
-    max-width: 300px;
     display: inline-block;
     border: 1px solid #eee;
     box-shadow: 0px 0px 2px #eee;
     border-radius: 5px;
     padding: 1.0875rem 1.63125rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.0875rem;
   }
 
   .card-img {
     border: 1px solid #eee;
     box-shadow: 0px 0px 2px #eee;
     border-radius: 5px;
-    margin-bottom: 1.0875rem;
+    margin-bottom: 0.63125rem;
   }
 
   .card img {
@@ -58,16 +57,33 @@ const Wrapper = styled.div`
   .card-title {
     font-size: larger;
     margin-top: 0.1rem;
-    margin-bottom: 1.0875rem;
+    margin-bottom: 0.3rem;
   }
 
   .card-text {
     font-size: inherit;
-    margin-bottom: 1.0875rem;
+    margin-bottom: 0.3rem;
   }
 
   .card-text:last-child {
     margin-bottom: 0;
+  }
+
+  .card-links {
+    margin-top: 0.63125rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-links a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  @media (min-width: 576px) {
+    .card {
+      max-width: 300px;
+    }
   }
 `
 

@@ -22,7 +22,7 @@ module.exports = {
         short_name: `pfdzm`,
         start_url: `/`,
         background_color: `white`,
-        theme_color: `palevioletred`,
+        theme_color: `#BF3B3B`,
         display: `minimal-ui`,
         icon: `src/images/me.jpg`, // This path is relative to the root of the site.
       },
