@@ -36,16 +36,16 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   .card {
     display: inline-block;
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 2px #eee;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1),
+      0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding: 1.0875rem 1.63125rem;
     margin-bottom: 1.0875rem;
   }
 
   .card-img {
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 2px #eee;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1),
+      0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     margin-bottom: 0.63125rem;
   }

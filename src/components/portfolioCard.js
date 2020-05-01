@@ -9,18 +9,32 @@ import PfdzmHome from "./screenshots/pfdzmHome"
 import WorkoutTracker from "./screenshots/workoutTracker"
 import EatDaBurger from "./screenshots/eatDaBurger"
 
+const getScreenshot = title => {
+  switch (title) {
+    case "CookNBook":
+      return <Cooknbook />
+    case "Dönate":
+      return <Doenate />
+    case "Word Guess Game":
+      return <WordGuessGame />
+    case "CodeQuiz":
+      return <CodeQuiz />
+    case "Weather Dashboard":
+      return <WeatherDashboard />
+    case "pfdzm Home":
+      return <PfdzmHome />
+    case "Workout Tracker":
+      return <WorkoutTracker />
+    case "Eat-da-Burger":
+      return <EatDaBurger />
+    default:
+      return <React.Fragment></React.Fragment>
+  }
+}
+
 export default ({ title, description, repo, deploy }) => (
   <div className="card">
-    <div className="card-img">
-      {title === "CookNBook" && <Cooknbook />}
-      {title === "Dönate" && <Doenate />}
-      {title === "Word Guess Game" && <WordGuessGame />}
-      {title === "CodeQuiz" && <CodeQuiz />}
-      {title === "Weather Dashboard" && <WeatherDashboard />}
-      {title === "pfdzm Home" && <PfdzmHome />}
-      {title === "Workout Tracker" && <WorkoutTracker />}
-      {title === "Eat-da-Burger" && <EatDaBurger />}
-    </div>
+    <div className="card-img">{getScreenshot(title)}</div>
     <div className="card-body">
       <h3 className="card-title">{title}</h3>
       <p className="card-text">{description}</p>
