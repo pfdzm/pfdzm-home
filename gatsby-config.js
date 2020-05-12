@@ -3,6 +3,7 @@ module.exports = {
     title: `pfdzm`,
     description: `Personal website for Pablo Fernandez (@pfdzm)`,
     author: `@pfdzm`,
+    image: "/social.png", 
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
