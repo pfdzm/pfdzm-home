@@ -4,7 +4,7 @@ module.exports = {
     description: `Personal website for Pablo Fernandez (@pfdzm)`,
     author: `@pfdzm`,
     url: "https://pfdzm.me", // No trailing slash allowed!
-    image: "/social.png", 
+    image: "/social.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
