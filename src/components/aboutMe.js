@@ -5,11 +5,10 @@ export default () => (
     <h2>About me</h2>
     <div>
       <p>
-        I'm Pablo and I am learning web development. I come from Spain, but
-        moved around quite a bit when I was a kid, having lived for a few years
-        in Germany, Belgium and Spain. Once I did my Abitur at the German School
-        in Madrid, I moved to Berlin to study Civil Engineering at the Berlin
-        Institute of Technology.
+        Hi, I'm Pablo. I come from Spain, but moved around quite a bit when I
+        was a kid, having lived for a few years in Germany, Belgium and Spain.
+        Once I did my Abitur at the German School in Madrid, I moved to Berlin
+        to study Civil Engineering at the Berlin Institute of Technology.
       </p>
       <p>
         Fast-forward ten years: I work as an Admissions Manager for the Degree
